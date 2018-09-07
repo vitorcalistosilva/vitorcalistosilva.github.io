@@ -1,127 +1,55 @@
-<!DOCTYPE HTML>
-<!-- Startpage by Addy
-https://plus.google.com/+AdhiPambudi
-https://addy-dclxvi.deviantart.com
-https://github.com/addy-dclxvi -->
-
-<meta name="experiment" content="noindex">
-<html lang="en-US">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Start Page</title>
-  <link rel="icon" href=".startpage.png">
-  
-  <style type="text/css">
-    a {
-	  color:#FFFFFF;
-	  text-decoration: none;
+	<meta charset="utf-8">
+	<title>Startpage</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!--IF YOU DONT WANT SEARCH BAR ON STARTPAGE..DELETE THE ENTIRE STYLE SECTION-->
+	<style type="text/css">
+	form {
+		position: absolute;				
+		right: 3.5%;
+		top: 5%;
+		width: 25%;
+		text-align: center;
+		opacity: 0.4;
 	}
-    #wrap {
-      overflow: hidden;
-      margin-left: 10%;
-      margin-top: 10%;
-      font-family: "Noto Sans", Times, serif;
-      font-size: 46px;
-      text-align: center;
-    }
-    .box {	
-      width: 30%;
-      padding-bottom: 22%;
-      color: #FFF;
-      position: relative;
-      float: left;
-    }
-    .innerContent1 {
-      position: absolute;
-      left: 5%;
-      right: 5%;
-      top: 8%;
-      bottom: 8%;
-      background: #4ec2e8;
-      padding-top: 24%;
-    }
-      .innerContent2 {
-      position: absolute;
-      left: 5%;
-      right: 5%;
-      top: 8%;
-      bottom: 8%;
-      background: #ef6b7b;
-      padding-top: 24%;
-    }
-      .innerContent3 {
-      position: absolute;
-      left: 5%;
-      right: 5%;
-      top: 8%;
-      bottom: 8%;
-      background: #f59335;
-      padding-top: 24%;
-    }
-      .innerContent4 {
-      position: absolute;
-      left: 5%;
-      right: 5%;
-      top: 8%;
-      bottom: 8%;
-      background: #fec7cd;
-      padding-top: 24%;
-    }
-      .innerContent5 {
-      position: absolute;
-      left: 5%;
-      right: 5%;
-      top: 8%;
-      bottom: 8%;
-      background: #a1d569;
-      padding-top: 24%;
-    }
-      .innerContent6 {
-      position: absolute;
-      left: 5%;
-      right: 5%;
-      top: 8%;
-      bottom: 8%;
-      background: #95c1c0;
-      padding-top: 24%;
-    }
-  </style>
-  
+	
+	input {
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		-ms-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+		
+		width: 70%;
+		font-size: 15px;
+		font-weight: normal;
+		outline: none;
+		border: none;
+		border-radius: 1px;
+		min-width: 100px;
+		padding: 7px 0 7px 7px;
+	}
+	</style>
 </head>
 <body>
-
-  <div id="wrap">
-    <div class="box">
-      <div class="innerContent1">
-        <a href="https://www.noisli.com/">noisli</a>
-      </div>
-    </div>
-    <div class="box">
-      <div class="innerContent2">
-        <a href="https://open.spotify.com/user/calyst0/playlist/583ga8JHwMwc1p9hfbuxaW">music to study</a>
-      </div>
-    </div>
-    <div class="box">
-      <div class="innerContent3">
-        <a href="http://sci-hub.tw/">sci-hub</a>
-      </div>
-    </div>
-    <div class="box">
-      <div class="innerContent4">
-        <a href="http://gen.lib.rus.ec/">library genesis</a>
-      </div>
-    </div>
-    <div class="box">
-      <div class="innerContent5">
-        <a href="https://web.whatsapp.com/">whatsapp</a>
-      </div>
-    </div>
-    <div class="box">
-      <div class="innerContent6">
-        <a href="https://forum.zwame.pt/">zwame</a>
-      </div>
-    </div>
-  </div>
-  
+	<form id="f" method="get" action="https://www.ecosia.org/search?q=">
+		<input id="q" type="text" autocomplete="off" required="required" autofocus="autofocus" placeholder="Search for..." name="q"/>
+	</form>
+	
+	<ul id="navMenu">
+		<li id="hov1"><a href="https://www.noisli.com/"  style="background-color:rgba(255, 255, 255, 0);">noisli</a></li>
+		<li id="hov2"><a href="https://open.spotify.com/user/calyst0/playlist/583ga8JHwMwc1p9hfbuxaW"  style="background-color:rgba(255, 255, 255, 0);">music to study</a></li>
+		<li id="hov3"><a href="http://sci-hub.tw/"  style="background-color:rgba(255, 255, 255, 0);">sci-hub</a></li>
+		<li id="hov4"><a href="http://gen.lib.rus.ec/http://gen.lib.rus.ec/"  style="background-color:rgba(255, 255, 255, 0);">library genesis</a></li>
+		<li id="hov5"><a href="https://web.whatsapp.com"  style="background-color:rgba(255, 255, 255, 0);">whatsapp</a></li>
+		<li id="hov6"><a href="https://forum.zwame.pt/"  style="background-color:rgba(255, 255, 255, 0);">zwame</a></li>
+	</ul>
 </body>
 </html>
