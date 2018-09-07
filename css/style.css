@@ -1,0 +1,87 @@
+body, ul, li, h1, h2, span{
+	margin:0;
+	padding:0;
+}
+
+ul{
+	list-style:none;
+}
+
+body{
+	background: url(../bg.jpg) no-repeat center center fixed #292929;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+}
+
+#navMenu {
+	position: absolute;
+	height:410px;
+	width: 100%;
+	overflow:hidden;
+	font-family: "HelveticaNeue", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	text-rendering: optimizeLegibility;
+	font-weight: bold;
+	bottom: 40px;
+}
+
+#navMenu li {
+	display: block;
+	min-width: 100%;
+	float:right;
+	clear:both;
+	position:relative;
+	overflow:hidden;
+	margin-bottom: 1px;
+	-webkit-transition: all 0.3s ease-in-out;
+	    -moz-transition: all 0.3s ease-in-out;
+	    -o-transition: all 0.3s ease-in-out;
+	    -ms-transition: all 0.3s ease-in-out;
+	    transition: all 0.3s ease-in-out;
+}
+
+#navMenu li a {
+	width: 100%;
+	font-size: 35px;
+	text-transform:lowercase;
+	text-decoration: none;
+	color: rgba(255,255,255,0.9);
+	outline: none;
+	text-indent:80px;
+	z-index: 10;
+	display: block;
+	float: right;
+	height: 65px;
+	line-height: 66px;
+	position: relative;
+	overflow: hidden;
+	padding-left: 10px;
+	margin-left: 10px;
+}
+
+#hov1:hover{
+background-color: rgb(78, 194, 232, 0.9);
+}
+
+#hov2:hover{
+background-color: rgb(237, 106, 122, 0.8);
+}
+
+#hov3:hover{
+background-color: rgb(245, 147, 53, 0.7);
+}
+
+#hov4:hover{
+background-color: rgb(254, 199, 205, 0.6);
+}
+
+#hov5:hover{
+background-color: rgb(161, 213, 105, 0.5);
+}
+
+#hov6:hover{
+background-color: rgb(45, 45, 45, 0.4);
+}
+
+::-webkit-input-placeholder { font-style:italic; text-decoration:overline; color:#999; }
