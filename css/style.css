@@ -28,7 +28,7 @@ body{
 
 #navMenu li {
 	display: block;
-	min-width: 100%;
+	min-width: 80%;
 	float:right;
 	clear:both;
 	position:relative;
