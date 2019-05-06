@@ -20,7 +20,7 @@ body, html {
 	display: grid;
 	overflow: hidden;
 	//background: #4c5163;
-	background: url('.background.jpg') no-repeat 0 0;
+	background: url('background.jpg') no-repeat 0 0;
 	background-size: cover
 }
 
